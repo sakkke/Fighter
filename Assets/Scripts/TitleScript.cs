@@ -6,10 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class TitleScript : MonoBehaviour
 {
+    AudioSource _audioSource;
+
+    [SerializeField]
+    AudioClip _clickedAudio;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        _audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,11 +42,13 @@ public class TitleScript : MonoBehaviour
 
     void OnStartButtonClicked()
     {
+        _audioSource.PlayOneShot(_clickedAudio);
         SceneManager.LoadScene("GameScene");
     }
 
     void OnExitButtonClicked()
     {
+        _audioSource.PlayOneShot(_clickedAudio);
         Application.Quit();
     }
 }
