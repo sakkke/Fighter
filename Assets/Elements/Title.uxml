@@ -1,8 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Styles/generated.uss?fileID=7433441132597879392&amp;guid=81e3d22a0694fe94cb6c09f02b6afad4&amp;type=3#generated" />
+    <Style src="project://database/Assets/Styles/Style.uss?fileID=7433441132597879392&amp;guid=b3eab78e5720d924aa17e841bffc6e6b&amp;type=3#Style" />
     <ui:VisualElement class="justify-center items-center bg-orange-50" style="flex-grow: 1;">
         <ui:Label tabindex="-1" text="Fighter" parse-escape-sequences="true" display-tooltip-when-elided="true" class="text-upper-center text-bold text-4xl mb-8 text-orange-900" />
-        <ui:Button text="Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="start" class="rounded-2xl text-2xl mb-4 w-64 text-orange-900 bg-orange-100 border-orange-500 hover_bg-orange-300 transition-duration-150 border-2 text-bold" />
-        <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit" class="rounded-2xl text-2xl w-64 text-orange-900 bg-orange-100 border-orange-500 hover_bg-orange-300 transition-duration-150 border-2 text-bold" />
+        <ui:Button text="Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="start" class="rounded-2xl text-2xl mb-4 w-64 text-orange-900 bg-orange-100 border-orange-500 hover_bg-orange-300 transition-duration-150 border-2 text-bold animation-button" />
+        <ui:Button text="Exit" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit" class="rounded-2xl text-2xl w-64 text-orange-900 bg-orange-100 border-orange-500 hover_bg-orange-300 transition-duration-150 border-2 text-bold animation-button" />
     </ui:VisualElement>
 </ui:UXML>
