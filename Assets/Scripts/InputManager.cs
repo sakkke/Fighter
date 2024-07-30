@@ -9,6 +9,9 @@ public class InputManager : MonoBehaviour
     InputActionReference _move;
 
     [SerializeField]
+    InputActionReference _punch;
+
+    [SerializeField]
     GameObject _player1;
 
     [SerializeField]
@@ -30,22 +33,28 @@ public class InputManager : MonoBehaviour
     {
         _move.action.performed += OnMovePerform;
         _move.action.canceled += OnMoveCancel;
+
+        _punch.action.performed += OnPunchPerform;
     }
 
     void Destroy()
     {
         _move.action.performed -= OnMovePerform;
         _move.action.canceled -= OnMoveCancel;
+
+        _punch.action.performed -= OnPunchPerform;
     }
 
     void OnEnable()
     {
         _move.action.Enable();
+        _punch.action.Enable();
     }
 
     void OnDisable()
     {
         _move.action.Disable();
+        _punch.action.Disable();
     }
 
     void OnMovePerform(InputAction.CallbackContext context)
@@ -66,5 +75,10 @@ public class InputManager : MonoBehaviour
     {
         _player1Animator.SetBool("Walk Forward", false);
         _player1Animator.SetBool("Walk Backward", false);
+    }
+
+    void OnPunchPerform(InputAction.CallbackContext context)
+    {
+        _player1Animator.SetTrigger("PunchTrigger");
     }
 }
