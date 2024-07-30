@@ -385,6 +385,10 @@ MonoBehaviour:
   _punch1: {fileID: 8299081130405861999, guid: 5b85f73030f618a47938e116a0bbb0c1, type: 3}
   _player1: {fileID: 1669726878}
   _player1Animator: {fileID: 1353555915}
+  _move2: {fileID: 0}
+  _punch2: {fileID: 0}
+  _player2: {fileID: 1855513362}
+  _player2Animator: {fileID: 978824633}
 --- !u!4 &976938747
 Transform:
   m_ObjectHideFlags: 0
@@ -400,6 +404,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &978824633 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9577182, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+  m_PrefabInstance: {fileID: 543975593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1218048535
 GameObject:
   m_ObjectHideFlags: 0

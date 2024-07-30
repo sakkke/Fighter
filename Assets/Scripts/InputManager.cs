@@ -17,6 +17,12 @@ public class InputManager : MonoBehaviour
     [SerializeField]
     Animator _player1Animator;
 
+    [SerializeField]
+    GameObject _player2;
+
+    [SerializeField]
+    Animator _player2Animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +53,29 @@ public class InputManager : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             _player1Animator.SetTrigger("PunchTrigger");
+        }
+
+        if (Input.GetKey(KeyCode.L))
+        {
+            _player2Animator.SetBool("Walk Backward", true);
+        }
+        else
+        {
+            _player2Animator.SetBool("Walk Backward", false);
+        }
+
+        if (Input.GetKey(KeyCode.J))
+        {
+            _player2Animator.SetBool("Walk Forward", true);
+        }
+        else
+        {
+            _player2Animator.SetBool("Walk Forward", false);
+        }
+
+        if (Input.GetKey(KeyCode.U))
+        {
+            _player2Animator.SetTrigger("PunchTrigger");
         }
     }
 
