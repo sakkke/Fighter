@@ -336,6 +336,53 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300006, guid: df7ef05fa87d48248ba181823b336391, type: 3}
+--- !u!1 &976938745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976938747}
+  - component: {fileID: 976938746}
+  m_Layer: 0
+  m_Name: Input Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &976938746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976938745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a4304740155a942b87b16764548e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _move: {fileID: -6202243752109592859, guid: 5b85f73030f618a47938e116a0bbb0c1, type: 3}
+  _player1: {fileID: 1669726878}
+  _player1Animator: {fileID: 1353555915}
+--- !u!4 &976938747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976938745}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.45440555, y: -0.69595844, z: -0.38347256}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1218048535
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +511,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1353555915 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9577182, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
+  m_PrefabInstance: {fileID: 1748756421}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1669726878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fbf89d03afc7fb848af45a6cf9c83d98, type: 3}
@@ -832,3 +884,4 @@ SceneRoots:
   - {fileID: 1748756421}
   - {fileID: 543975593}
   - {fileID: 1218048537}
+  - {fileID: 976938747}
