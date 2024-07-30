@@ -26,7 +26,28 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.A))
+        {
+            _player1Animator.SetBool("Walk Backward", true);
+        }
+        else
+        {
+            _player1Animator.SetBool("Walk Backward", false);
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            _player1Animator.SetBool("Walk Forward", true);
+        }
+        else
+        {
+            _player1Animator.SetBool("Walk Forward", false);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            _player1Animator.SetTrigger("PunchTrigger");
+        }
     }
 
     void Awake()
