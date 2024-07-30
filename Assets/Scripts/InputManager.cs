@@ -6,10 +6,10 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     [SerializeField]
-    InputActionReference _move;
+    InputActionReference _move1;
 
     [SerializeField]
-    InputActionReference _punch;
+    InputActionReference _punch1;
 
     [SerializeField]
     GameObject _player1;
@@ -31,30 +31,30 @@ public class InputManager : MonoBehaviour
 
     void Awake()
     {
-        _move.action.performed += OnMovePerform;
-        _move.action.canceled += OnMoveCancel;
+        _move1.action.performed += OnMovePerform;
+        _move1.action.canceled += OnMoveCancel;
 
-        _punch.action.performed += OnPunchPerform;
+        _punch1.action.performed += OnPunchPerform;
     }
 
     void Destroy()
     {
-        _move.action.performed -= OnMovePerform;
-        _move.action.canceled -= OnMoveCancel;
+        _move1.action.performed -= OnMovePerform;
+        _move1.action.canceled -= OnMoveCancel;
 
-        _punch.action.performed -= OnPunchPerform;
+        _punch1.action.performed -= OnPunchPerform;
     }
 
     void OnEnable()
     {
-        _move.action.Enable();
-        _punch.action.Enable();
+        _move1.action.Enable();
+        _punch1.action.Enable();
     }
 
     void OnDisable()
     {
-        _move.action.Disable();
-        _punch.action.Disable();
+        _move1.action.Disable();
+        _punch1.action.Disable();
     }
 
     void OnMovePerform(InputAction.CallbackContext context)

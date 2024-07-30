@@ -365,8 +365,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2a4304740155a942b87b16764548e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _move: {fileID: -6202243752109592859, guid: 5b85f73030f618a47938e116a0bbb0c1, type: 3}
-  _punch: {fileID: 8299081130405861999, guid: 5b85f73030f618a47938e116a0bbb0c1, type: 3}
+  _move1: {fileID: -6202243752109592859, guid: 5b85f73030f618a47938e116a0bbb0c1, type: 3}
+  _punch1: {fileID: 8299081130405861999, guid: 5b85f73030f618a47938e116a0bbb0c1, type: 3}
   _player1: {fileID: 1669726878}
   _player1Animator: {fileID: 1353555915}
 --- !u!4 &976938747
